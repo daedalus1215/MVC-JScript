@@ -1,0 +1,20 @@
+{
+    "name": "mvc-jscript",
+    "version": "1.0.0",
+    "description": "using javascript to create a MVC framework",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "http-server": "node ./node_modules/http-server/bin/http-server"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ladams1776/MVC-JScript.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ladams1776/MVC-JScript/issues"
+    },
+    "homepage": "https://github.com/ladams1776/MVC-JScript#readme"
+}

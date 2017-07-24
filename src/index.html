@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <script src="Penguin/PenguinController.js" />
+    <script src="Penguin/PenguinView.js" />
+    <script src="Penguin/PenguinModel.js" />
+
+</head>
+
+
+<body>
+    adsasdasd
+    <script type="text/javascript">
+        window.onload = function() {
+
+            var PenguinViewMock = function PenguinViewMock() {
+                this.calledRenderWith = null;
+            };
+            PenguinViewMock.prototype.render = function render(penguinViewModel) {
+                this.calledRenderWith = penguinViewModel;
+            }; // Arrange var penguinViewMock = new PenguinViewMock();
+            var controller = new PenguinController(penguinViewMock, null);
+            var penguinModelData = {
+                name: 'Chinstrap',
+                imageUrl: 'http://chinstrapl.jpg',
+                size: '5.0kg (m), 4.8kg (f)',
+                favoriteFood: 'krill',
+                index: 2,
+                count: 5
+            }; // Act 
+            controller.showPenguin(penguinModelData);
+        };
+    </script>
+
+
+
+
+
+</body>
+
+</html>
